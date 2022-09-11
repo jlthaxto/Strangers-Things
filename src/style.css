@@ -7,7 +7,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+* {
+background-color: rgb(98, 207, 207);
+color: white;
+font-size: 35px;
+word-spacing:  10%;
+
+
+
 }
+
+* Posts {
+color: white;
+}
+
+* {
+   font-family: 'Indie Flower', cursive;
+  font-family: 'Rubik Moonrocks', cursive;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
