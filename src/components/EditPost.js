@@ -61,6 +61,10 @@ const EditPost = ({ posts, token }) => {
         onChange={(ev) => setNewWillDeliver(ev.target.checked)}
       />
       <button type='submit'>Edit Post</button>
+      <button type="submit" onClick={() => {
+        deletePost(token,postID);
+      }}>Delete</button>
+
     </form>
   )
 }

@@ -15,18 +15,41 @@ background-color: rgb(98, 207, 207);
 color: white;
 font-size: 35px;
 word-spacing:  10%;
+border: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+
 
 
 
 }
 
-* Posts {
-color: white;
+.button {
+  color:yellow;
 }
+
+#Posts{
+  display: flex;
+  padding: 5px;
+  margin: 10px;
+
+
+}
+
+
 
 * {
    font-family: 'Indie Flower', cursive;
   font-family: 'Rubik Moonrocks', cursive;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+
+
+ 
+
+ 
+
 

@@ -2,8 +2,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
+
 const Posts = ({ posts }) => {
-  
+ 
+
+
+  // function postMatches(post, string) {
+  //   title=string;
+  //   description=string // return true if any of the fields you want to check against include the text
+  //   .includes((title.includes(string) === true) || (description.includes(string) === true)
+      
+  //   )// strings have an .includes() method 
+  //  return (
+  //   post
+  // )
+  //  }
+  // const filteredPosts = posts.filter(post => postMatches(post, searchTerm));
+  // const postsToDisplay = searchTerm.length ? filteredPosts : posts;
+
+  // // then, in our jsx below... map over postsToDisplay instead of posts
+ 
+
   return (
     <div id='outer div element'>
     {
@@ -20,6 +40,7 @@ const Posts = ({ posts }) => {
                 <Link to={`/posts/edit-post/${_id}`}>Edit</Link>
               ) : (
                 <Link to={`/posts/${_id}`}>View</Link>
+              
               )
             }
          
@@ -28,14 +49,16 @@ const Posts = ({ posts }) => {
 
             {
               isAuthor ? (
-                <Link onClick={`/posts/delete-post/${_id, token}`}>Delete Post</Link>
+                
+                <button onClick={`/posts/delete-post/${_id, token}`}>Delete Post</button>
               ) : (
-                <Link to={`/posts/${_id}`}>View</Link>
+               <button> <Link to={`/posts/${_id}`}>Delete</Link> </button>
               )
             }
 
 
           </div>
+        
         )
       })
     }

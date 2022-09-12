@@ -13,7 +13,7 @@ import {
   CreatePost,
   SinglePostView,
   EditPost,
-  SearchForm
+  
 } from './components';
 
 import {
@@ -121,6 +121,7 @@ const App = () => {
             navigate={ navigate }
           />}
         />
+       
       </Routes>
     </div>
   )
